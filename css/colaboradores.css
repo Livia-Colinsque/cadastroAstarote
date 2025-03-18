@@ -1,0 +1,117 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: sans-serif; /* Define a fonte padrão como sans-serif */
+    display: flex;         /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;      /* Ocupa no mínimo a altura da tela */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: white;   /* Fundo branco */
+    padding: 30px;             /* Espaçamento interno */
+    border-radius: 8px;        /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%;               /* Largura total disponível */
+    max-width: 500px;          /* Largura máxima */
+    box-sizing: border-box;    /* Inclui padding e border na largura/altura */
+}
+
+/* Estilos para os labels */
+label {
+    display: block;           /* Ocupa uma linha inteira */
+    margin-bottom: 5px;       /* Espaço abaixo do label */
+}
+
+/* Estilos para inputs e select */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;            /* Largura total */
+    padding: 8px;            /* Espaçamento interno */
+    margin-bottom: 10px;     /* Espaço abaixo do campo */
+    border: 1px solid #ccc;  /* Borda cinza */
+    border-radius: 4px;     /* Bordas arredondadas */
+    box-sizing: border-box;  /* Inclui padding e border na largura */
+}
+
+/* Estilos para o container dos botões */
+#botoes {
+    margin-top: 20px;       /* Espaço acima dos botões */
+    display: flex;          /* Usa Flexbox */
+    justify-content: space-between; /* Espaço entre os botões */
+    flex-wrap: wrap;        /* Quebra para a próxima linha se necessário */
+}
+
+/* Estilos gerais para os botões */
+button {
+    padding: 10px 15px;    /* Espaçamento interno */
+    border: none;          /* Sem borda */
+    border-radius: 4px;    /* Bordas arredondadas */
+    cursor: pointer;      /* Cursor de mãozinha */
+    flex: 1;              /* Ocupam larguras iguais */
+    margin: 2px;           /* Pequena margem entre eles */
+    min-width: 100px;      /* Largura mínima */
+}
+
+/* Estilos para botões desabilitados */
+button:disabled {
+    background-color: #cccccc; /* Cor de fundo cinza claro */
+    color: #666666;          /* Cor do texto cinza escuro */
+    cursor: not-allowed;    /* Cursor indicando que não é permitido clicar */
+}
+
+/* Estilos para o botão Cadastrar */
+#bntCadastrar {
+    background-color: #4CAF50; /* Verde */
+    color: white;            /* Texto branco */
+}
+
+/* Estilos para o botão Voltar */
+#bntvoltar {
+    background-color: #f44336; /* Vermelho */
+    color: white;            /* Texto branco */
+}
+
+/* Estilos para o botão Consultar */
+#bntConsultar {
+    background-color: #2196F3; /* Azul */
+    color: white;            /* Texto branco */
+}
+
+/* Estilos para o botão Alterar */
+#bntAlterar {
+    background-color: #ff9800; /* Laranja */
+    color: white;            /* Texto branco */
+}
+
+/* Estilos para o botão Excluir */
+#bntExcluir {
+    background-color: #f44336; /* Vermelho (mesmo do Voltar) */
+    color: white;            /* Texto branco */
+}
+
+/* Estilos para os radio buttons */
+.radio-group {
+    display: flex;          /* Usa Flexbox */
+    align-items: center;     /* Alinha verticalmente */
+    margin-bottom: 15px;     /* Espaço abaixo do grupo */
+}
+
+/* Estilos para os labels dentro do grupo */
+.radio-group label {
+    display: flex;          /* Usa Flexbox */
+    align-items: center;     /* Alinha verticalmente */
+    margin-right: 20px;      /* Espaço entre as opções */
+    cursor: pointer;         /* Cursor de mãozinha */
+}
+
+/* Estilos para os radio buttons */
+.radio-group input[type="radio"] {
+    margin-right: 5px;       /* Espaço entre o botão e o texto */
+}
