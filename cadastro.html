@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="./css/colaboradores.css">
+</head>
+
+<body>
+    <!-- Código de leitura em Libras -->
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- fim ACESSIBILIDADE EM LIBRAS -->
+
+
+
+    <div class="container">
+        <h1>Cadastro de Funcionário</h1>
+        <form id="cadastroForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label> <!-- Campo de senha já existia! -->
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento">
+                <option value="ti">TI</option>
+                <option value="rh">RH</option>
+                <option value="marketing">Marketing</option>
+                <option value="vendas">Vendas</option>
+            </select>
+
+            <div class="radio-group">
+                <label for="nivel">Nível de Acesso:</label>
+                <label>
+                    <input type="radio" id="nivelAdministrador" name="nivel" value="administrador" required>
+                    Administrador
+                </label>
+                <label>
+                    <input type="radio" id="nivelBasico" name="nivel" value="basico" required>
+                    Básico
+                </label>
+            </div>
+
+            <label for="salario">Salário:</label>
+            <input type="number" id="salario" name="salario" required step="0.01">
+
+            <label for="dataAdmissao">Data de Admissão:</label>
+            <input type="date" id="dataAdmissao" name="dataAdmissao" required>
+
+            <div id="botoes">
+                <button type="submit" id="bntCadastrar">Cadastrar</button>
+                <button type="button" id="bntConsultar" onclick="consultarPorNome()">Consultar</button>
+                <!-- Botão Consultar -->
+                <button type="button" id="bntAlterar" onclick="alterarCadastro()">Alterar</button>
+                <!-- Botão Alterar -->
+                <button type="button" id="bntExcluir" onclick="excluirCadastro()">Excluir</button>
+                <!-- Botão Excluir -->
+                <button type="button" id="bntvoltar" onclick="voltarParaIndex()">Voltar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/banco.js"></script>
+</body>
+
+</html>

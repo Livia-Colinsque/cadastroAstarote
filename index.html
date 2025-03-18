@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br"> <!-- Elemento raiz HTML, com idioma definido para português brasileiro -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <title>🍪 - Tela de Login - 🍪</title> <!-- Título da página que aparece na aba do navegador -->
+    <!-- colocando icone na aba do site -->
+    <link rel="shortcut icon" href="./img/cooke.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+
+<body>
+    <!-- Código de leitura em Libras -->
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- fim ACESSIBILIDADE EM LIBRAS -->
+     
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <!-- Mudei o placeholder para "E-mail" -->
+            <input type="text" id="username" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <div id="botoes">
+              <button id="entra" type="button">Entrar</button>
+              <button id="cadast" type="button">Cadastrar</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    
+
+
+</body>
+<script src="./js/cokkies.js"></script> <!-- Link para o arquivo JavaScript externo -->
+
+</html>

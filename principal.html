@@ -1,0 +1,94 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="./css/roupas.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="importmap"></script> -->
+
+ 
+</head>
+
+<body>
+ <!-- Código de leitura em Libras -->
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- fim ACESSIBILIDADE EM LIBRAS -->
+
+
+
+  <header>
+    <div class="logo">
+      Logo Aqui
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Galeria de Fotos</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Produtos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="image-cards">
+      <div class="card">
+        <img src="./img/roupa1.jpeg" alt="Imagem 1">
+        <div class="card-content">
+          <h3>Para Crianças de 3 a 6</h3>
+          <p>Na compra 4 unidades desconto de 30%</p>
+          <a href="#">outros produtos</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./img/roupa2.jpeg" alt="Imagem 2">
+        <div class="card-content">
+          <h3>Para crianças de 15 a 16</h3>
+          <p>Na compra de 10 desconto de 12%</p>
+          <a href="#">Ver mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./img/roupa3.jpeg" alt="Imagem 3">
+        <div class="card-content">
+          <h3>Para crianças 2 até 3</h3>
+          <p>roupas diversas</p>
+          <a href="#">Ver mais</a>
+        </div>
+      </div>
+    </section>
+     <!-- Botão para controlar a leitura (iniciar/pausar/continuar) -->
+     <button id="controlarLeitura">Iniciar Leitura</button>
+     <!-- Botão para parar a leitura -->
+    <button id="pararLeitura">Parar Leitura</button>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Meu Site</p>
+  </footer>
+</body>
+<script src="./js/script.js" type="module"></script>
+<script src="./js/leitor.js"></script>
+</html>
